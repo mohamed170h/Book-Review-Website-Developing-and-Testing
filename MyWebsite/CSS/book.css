@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0%;
+    overflow: visible;
+}
+
+/* Header Styles */
+header {
+    background: rgb(9, 72, 80);
+    color: rgba(241, 245, 253, 0.795);
+    padding-top: 20px;
+    min-height: 60px;
+    border-bottom: #afd0eb 3px skyblue;
+}
+
+nav {
+    float: left;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: circle;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-flex;
+    padding: 0 100px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Title Styles */
+main h1 {
+    margin-bottom: 2px; /* Adjust this to change the space below the title */
+}
+
+/* Paragraph Styles */
+main p {
+    margin-top: 1px; /* Adjust this to change the space above the paragraph */
+}
+
+/* Footer Styles */
+footer {
+    background: rgb(9, 72, 80);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+
+/* This will make the links in the header white */
+header a {
+    color: white;
+}
+
+
+/* individual book design */ 
+.book-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2em;
+  }
+  
+  .book-image-container {
+    flex: 20px;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .book-image {
+    width: 60%;
+    height: auto;
+    margin-bottom: 1em;
+    border-radius: 15px;
+  }
+  
+  .book-info {
+    flex: 2;
+    max-width: 60%;
+    padding-left: 2em;
+  }
+  
+  .book-title {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  .book-author {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .book-rating {
+    font-size: 1.2em;
+    color: #888;
+    margin-bottom: 1em;
+  }
+  
+  .book-description {
+    margin-bottom: 2em;
+  }
+  
+  .book-genres {
+    font-style: italic;
+  }
+  
+  .rate-button {
+    padding: 0.5em 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1em;
+  }
+  
+  .rate-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  /* Rating system */
+  .star {
+    cursor: pointer;
+    color: white; /* Default color is white */
+    font-size: 2em; /* Adjust this value to change the size of the stars */
+    text-shadow: 
+      1px 1px 2px #000,  
+      -1px -1px 2px #000; /* Adjust these values to make the stars less sharp */
+    filter: drop-shadow(2px 2px 2px black); /* Black shadow */
+  }
+  
+  .star.active {
+    color: #FFD700; /* Active color is gold */
+  }
+  
+  
+  

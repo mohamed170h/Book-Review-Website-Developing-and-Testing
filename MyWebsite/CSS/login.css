@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This will center the form vertically */
+}
+
+/* Header Styles */
+header {
+    background: rgb(9, 72, 80);
+    color: rgba(241, 245, 253, 0.795);
+    padding-top: 20px;
+    min-height: 60px;
+    border-bottom: #afd0eb 3px skyblue;
+}
+
+nav {
+    float: left;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: circle;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-flex;
+    padding: 0 100px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Contact Form */ 
+.form-container {
+    width: 300px; /* Adjust this to change the width of the form */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.form-input {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: none;
+}
+
+.form-submit {
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #444;
+}
+
+/* Footer Styles */
+footer {
+    background: rgb(9, 72, 80);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/* This will make the links in the header white */
+header a {
+    color: white;
+}

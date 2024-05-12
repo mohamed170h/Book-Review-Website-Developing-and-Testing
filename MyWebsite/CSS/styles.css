@@ -1,0 +1,240 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: 0%;
+    overflow: visible;
+    flex: 1 0 auto; /* This will make the container take up all available space */
+}
+
+/* Header Styles */
+header {
+    background: rgb(9, 72, 80);
+    color: rgba(241, 245, 253, 0.795);
+    padding-top: 20px;
+    min-height: 60px;
+    border-bottom: #afd0eb 3px skyblue;
+}
+
+nav {
+    float: left;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: circle;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-flex;
+    padding: 0 70px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    display: flex; /* Add this line */
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    /* flex-wrap: wrap; /* Add this line */
+    /* justify-content: space-between; /* Add this line */
+}
+
+/* Title Styles */
+main h1 {
+    margin-bottom: 2px; /* Adjust this to change the space below the title */
+}
+
+/* Paragraph Styles */
+main p {
+    margin-top: 1px; /* Adjust this to change the space above the paragraph */
+}
+
+/* Book Review Box Styles */
+.book-review-box {
+    width: 20%;
+    margin: 1.5%;
+    border: 10px solid #ddd;
+    padding: 20px;
+    margin-block: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    flex: 0 0 20%; /* Add this line */
+    margin: 0.75%; /* Add this line */
+}
+
+.book-review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.book-review-box:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.book-review-box img {
+    width: 68%; /* Change this line */
+    height: 65%; /* Change this line */
+    border-radius: 15px 20px;
+    transition: transform .2s;
+}
+
+.book-review-box:hover img {
+    transform: scale(1.1);
+}
+
+.book-review-box h2 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.book-review-box p {
+    color: #FF6347;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    flex-shrink: 0;
+    background: rgb(9, 72, 80);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/* This will make the links in the header white */
+header a {
+    color: white;
+}
+
+/* This will make the book names black */
+.book-review-box h2 a {
+    color: black;
+}
+
+
+.book-name a:visited {
+    text-decoration: none;
+  }
+
+  .book-name a:link {
+    text-decoration: none;
+  }
+  
+  .book-name a:active {
+    text-decoration: none;
+  }
+
+  .book-name a:checked {
+    text-decoration: none;
+  }
+  
+  
+
+/* Animation */
+/* Define the animation */
+@keyframes hoverAnimation {
+    100% { transform: scale(1.1); }
+  }
+  
+  /* Apply the animation to the book names when hovered */
+  .book-name:hover {
+    animation: hoverAnimation 0.5s forwards;
+  }
+  
+  
+
+
+/* Contact Form */ 
+.form-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px; /* Add this line */
+}
+
+.contact-form {
+    width: 50%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.form-input {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: none;
+}
+
+.form-textarea {
+    height: 130px; /* Adjust this to change the height of the textarea */
+}
+
+
+.form-submit {
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #444;
+}
+
+.content-container {
+    width: 80%; /* Adjust this to change the width of the container */
+    margin: 0 auto; /* Centers the container */
+}
+
+
+/* Our Values and Our Mission Styles */
+section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #666;
+    line-height: 1.6;
+}
